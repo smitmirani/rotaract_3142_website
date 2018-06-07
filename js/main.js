@@ -55,7 +55,7 @@
                 'color': '#333'
             });
             $("nav.navbar-fixed-top").addClass("nav_border");
-            $(".changeable").attr("src", "img/logo.png");
+            $(".changeable").attr("src", "img/top-logo_black.png");
         } else {
             $("nav.transparrent-bg").css({
                 'background-color': 'transparent',
@@ -73,7 +73,7 @@
                 'color': '#fff'
             });
             $("nav.navbar-fixed-top").removeClass("nav_border");
-            $(".changeable").attr("src", "img/logo-2.png");
+            $(".changeable").attr("src", "img/top-logo_white.png");
         }
 
 
