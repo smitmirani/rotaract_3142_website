@@ -331,7 +331,7 @@ p.para-w {
     opacity: 0.5
 }
 .bg-donation {
-    background: url(../img/video-bg.jpg) repeat fixed 0 0 / cover
+    background: url(../img/district1718.jpg) repeat fixed 0 0 / cover
 }
 
 
@@ -970,7 +970,7 @@ video {
     opacity: 0.8;
 }
 #benefit {
-    background: url(../img/about/1_about.jpg) repeat fixed 0 0 / cover;
+    background: url(../img/about/blooddonation.jpg) repeat fixed 0 0 / cover;
 }
 .benefit-text {
     display: table-cell;
@@ -2676,7 +2676,7 @@ nav.transparrent-bg .menuzord-brand {
     color: #fff;
 }
 .about-cor-a {
-    background: rgba(0, 0, 0, 0) url("../img/about/1_about.jpg") repeat fixed 0 0 / cover;
+    background: rgba(0, 0, 0, 0) url("../img/about/district1718.jpg") repeat fixed 0 0 / cover;
     height: 600px;
     margin: 0;
 }
@@ -6817,3 +6817,10 @@ label {
         width: 90%;
     }
 }
+
+
+
+
+/*Bhavesh Changes 07/06/18*/
+.buy-theme{display: none;}
+#particles-js{background-image: url(../img/hero/home_banner_1.jpg);}
