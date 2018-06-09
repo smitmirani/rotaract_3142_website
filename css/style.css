@@ -159,6 +159,10 @@ img {
     font-size: 18px;
     color: #000;
 }
+
+.rotaract-logo {
+	
+}
 .achiv {
     background: #000;
     font-size: 18px;
@@ -331,7 +335,7 @@ p.para-w {
     opacity: 0.5
 }
 .bg-donation {
-    background: url(../img/district1718.jpg) repeat fixed 0 0 / cover
+    background: url(../img/children.jpg) repeat fixed 0 0 / cover
 }
 
 
@@ -6823,4 +6827,4 @@ label {
 
 /*Bhavesh Changes 07/06/18*/
 .buy-theme{display: none;}
-#particles-js{background-image: url(../img/hero/home_banner_1.jpg);}
+#particles-js{background-image: url(../img/hero/home_banner_1.jpg);}`
