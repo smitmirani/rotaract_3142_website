@@ -6826,5 +6826,21 @@ label {
 
 
 /*Bhavesh Changes 07/06/18*/
-.buy-theme{display: none;}
-#particles-js{background-image: url(../img/hero/home_banner_1.jpg);}`
+.buy-theme, div.main-area, div.footer-section-area{display: none;}
+.home-live-feeds iframe{margin: 0 auto;}
+div.icon-logo{min-height: 175px;}
+div.icon-logo + h3{min-height: 50px;}
+#particles-js{background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero/home_banner_1.jpg);}
+div.main-features{padding: 80px 0 0;}
+.menuzord-menu li:nth-child(3), .menuzord-menu li:nth-child(5){display: none;}
+.volunteer-bg{background: url(../img/core_team_banner.jpg) no-repeat scroll 40% 40%/ cover;}
+.core-team li:nth-child(3){display: none;}
+.fb-feed, .twitter-feed{
+	display: inline-block;
+	width: 49%;
+	margin: 40px auto 0;
+}
+.fb-feed{text-align: right;}
+.twitter-feed{text-align: left;}
+.section-title h2.social-media-head{padding: 80px 0 0;}
+.achivement-box h4, .benefit-text-i h4 {font-size: 12px;}
