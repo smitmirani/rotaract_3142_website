@@ -6846,3 +6846,7 @@ div.main-features{padding: 80px 0 0;}
 .twitter-feed{text-align: left;}
 .section-title h2.social-media-head{padding: 80px 0 0;}
 .achivement-box h4, .benefit-text-i h4 {font-size: 12px;}
+.bg-soon {
+    background: url(../img/hero/rotaract3142.png) no-repeat scroll center center / cover;
+
+}
