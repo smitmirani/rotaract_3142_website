@@ -34,6 +34,50 @@
       <!-- Revolution Style -->
       <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
       <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+	    <link rel="stylesheet" href='css/countdown.css' type='text/css' media='all' />
+      <style type="text/css">
+        #transparent-bg{
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(0,0,0,0.8);
+          z-index: 99999;
+        }
+        .doh-link{
+          position: fixed;
+          padding: 20px;
+          background-color: #ffffff;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+          color: #333;
+          text-align: center;
+          border-radius: 5px;
+        }
+        .doh-link a{
+          color: #ff1e58;
+          text-decoration: underline;
+        }
+        @media screen and (max-width: 767px){
+          .home-live-feeds iframe {
+            margin: 0 auto!important;
+            width: 300px!important;
+          }
+          .bg-soon{
+            background-size: contain;
+            height: 600px!important;
+          }
+          .fb-feed, .twitter-feed {
+            display: inline-block;
+            width: auto;
+            margin: 40px auto 0;
+          }
+          .close-window{left: 87%!important;}
+        }
+      </style>
    </head>
    <body>
       <!-- Preloader start-->
@@ -115,6 +159,9 @@
       </nav>
       <!-- END Nav Bar --> 
       <!-- Banner -->
+      <div id="transparent-bg"">
+        <div class="doh-link top-heading-soon">To know about our locations go to <a href="doh_locations.html">Location Finder</a><p title="Close Window" class="close-window" style="top: -15px; left: 97%; position: absolute; font-size:  24px; background-color: #333; padding: 8px 12px; border-radius: 50%; color: #ffffff;cursor: pointer;">x</p></div>
+      </div>
       <div id="particle" class="welcome-image-area particle-bg" data-stellar-background-ratio="0.6">
          <div id="particles-js"></div>
          <div class="display-table">
@@ -151,6 +198,23 @@
       <!-- END Demo Heading --> 
       <!--Main Features-->
       <!-- Added live twitter feed -->
+	 <!-- Countdown -->
+	  <div id="home" class="bg-soon low-back-i full-height">
+  <div class="text-con-i low-back-up">
+    <div class="container text-center">
+      <div class="row">
+        <div class="lead col-lg-12 col-xm-12  ">
+          <div class="lead col-lg-8 col-sm-offset-0 col-lg-offset-2 col-xm-8 text-center ">
+            <div class="newsletter text-center">
+              <div class="top-heading-soon text-center"> NEW <span class="red">ROTA YEAR </span> IN </div>
+              <div class="soon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
       <div class="section-title center">
          <h2 class="social-media-head">Social <strong>Media</strong></h2>
          <div class="home-live-feeds">
@@ -162,7 +226,9 @@
             <div class="twitter-feed">
                <a class="twitter-timeline" data-width="600" data-height="430" href="https://twitter.com/Rotaract_3142?ref_src=twsrc%5Etfw">Tweets by Rotaract_3142</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-         </div>
+			</br>
+			</br></br>
+		</div>
       </div>
       <div class="main-features"></div>
       <div class="container">	  
@@ -410,6 +476,7 @@
                         <div class="col-md-12 col-sm-12">
                            <h3>Drop of <span class="pink"><strong>Hope</strong></span></h3>
                            <div class="project-text">Blood Donation Initiative, </div>
+						   
                            <p class="para">Drop of hope is a community service project, organized throughout our district.
                               'A life may depend on a gesture from you, a bottle of Blood', following the same, this mega blood donation drive, takes place on the 1st of July, every year.
                               A strong social media and public promotion is done a couple of weeks prior to the event. 
@@ -759,6 +826,23 @@
       <script type="text/javascript" src="js/app.js"></script> 
       <!-- Easypiechart JS  --> 
       <script type="text/javascript" src="js/easypiechart.js"></script> 
+	  <script type="text/javascript" src="js/countdown.min.js"></script> 
+    <script>
+			jQuery(document).ready(function($){						
+				$('.soon').dsCountDown({
+					endDate: new Date("july 01, 2018 00:00:00"),
+					theme: 'black'
+				});		        			
+			});
+		</script> 
+    <script type="text/javascript">
+      jQuery(document).ready(function($){
+        $('.close-window').on('click', function(event) {
+          event.preventDefault();
+          $('#transparent-bg').fadeOut();
+        });
+      });
+    </script>
       <!-- main js --> 
       <script type="text/javascript" src="js/main.js"></script>
    </body>
